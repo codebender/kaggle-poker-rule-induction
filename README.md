@@ -8,3 +8,9 @@
 brew tap homebrew/science
 brew install r
 ```
+
+2. Install Dependencies
+
+```R
+install.packages('randomForest')
+```
