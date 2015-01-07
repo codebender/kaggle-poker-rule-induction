@@ -4,13 +4,13 @@
 ## Getting Started
 1. Install R with brew
 
-```shell
-brew tap homebrew/science
-brew install r
-```
+  ```shell
+  brew tap homebrew/science
+  brew install r
+  ```
 
 2. Install Dependencies
 
-```R
-install.packages('randomForest')
-```
+  ```R
+  install.packages('randomForest')
+  ```
