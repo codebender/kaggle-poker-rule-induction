@@ -10,10 +10,10 @@ set.seed(415)
 fit <- randomForest(as.factor(hand) ~
   S1 + C1 + S2 + C2 + S3 + C3 + S4 + C4 + S5 + C5,
   data=train,
-  ntree = 2000)
+  ntree = 2000, mtry=9)
 
 prediction <- predict(fit, test, type="class")
 
 # Create submission dataframe and output to file
 submit <- data.frame(id = test$id, hand = prediction)
-write.csv(submit, file = "Output/random_forest.csv", row.names = FALSE)
+write.csv(submit, file = "Output/random_forest_mtry9.csv", row.names = FALSE)
